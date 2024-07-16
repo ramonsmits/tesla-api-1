@@ -1,4 +1,4 @@
-﻿namespace TeslaAPI.Models.Vehicles
+namespace TeslaAPI.Models.Vehicles
 {
     using global::TeslaAPI.Enumerators;
     using Newtonsoft.Json;
@@ -61,10 +61,10 @@
         public int FrontTrunk { get; set; }
 
         [JsonProperty("homelink_device_count")]
-        public int HomelinkDeviceCount { get; set; }
+        public int? HomelinkDeviceCount { get; set; }
 
         [JsonProperty("homelink_nearby")]
-        public bool HomelinkNearby { get; set; }
+        public bool? HomelinkNearby { get; set; }
 
         [JsonProperty("is_user_present")]
         public bool IsUserPresent { get; set; }
